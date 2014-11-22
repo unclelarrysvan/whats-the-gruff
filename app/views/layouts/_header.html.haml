@@ -1,0 +1,10 @@
+.navbar.navbar-inverse{role: 'navigation'}
+  .container-fluid
+    .navbar-header
+      %a.navbar-brand{href: home_path} What's the Gruff?
+    .navbar-collapse.collapse
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          %a{href: new_post_path}
+            %span.glyphicon.glyphicon-plus
+            New Post

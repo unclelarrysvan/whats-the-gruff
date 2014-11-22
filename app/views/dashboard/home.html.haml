@@ -1,0 +1,9 @@
+.row
+  .col-xs-8.col-xs-offset-2
+    -@posts.each do |post|
+      .panel.panel-default
+        .panel-heading
+          .panel-title=post.title
+        .panel-body=post.content
+        .panel-footer
+          /=post.user.username
