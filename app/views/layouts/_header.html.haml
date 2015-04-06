@@ -8,3 +8,6 @@
           %a{href: new_post_path}
             %span.glyphicon.glyphicon-plus
             New Post
+        -if user_signed_in?
+          %li
+            %a{href: edit_user_registration_path} My Account

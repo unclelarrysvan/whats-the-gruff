@@ -10,10 +10,13 @@
 
   <%= render 'layouts/header' %>
 
-  <p class='notice'><%= notice %></p>
-  <p class='alert'><%= alert %></p>
-
-<%= yield %>
+  <div class='row'>
+    <div class='col-md-10 col-md-offset-1'>
+      <p class='notice'><%= notice %></p>
+      <p class='alert'><%= alert %></p>
+      <%= yield %>
+    </div>
+  </div>
 
 </body>
 </html>
