@@ -6,6 +6,10 @@ Rails.application.routes.draw do
 
   get '/home' => 'dashboard#home', as: 'home'
 
+  devise_scope :user do
+    get "users/:id" => "users/sessions#show", as: "user"
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

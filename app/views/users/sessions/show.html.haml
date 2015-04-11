@@ -1,0 +1,9 @@
+%h1 #{@user.username}
+%h5 User since #{@user.created_at.strftime("%d %B %Y")}
+-if @user == current_user
+  %a.btn.btn-primary{href: edit_user_registration_path} Edit
+
+.row
+  .col-xs-12
+    -@user.posts.each do |post|
+      =render "posts/block", post: post

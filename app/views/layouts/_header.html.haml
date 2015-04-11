@@ -10,4 +10,4 @@
             New Post
         -if user_signed_in?
           %li
-            %a{href: edit_user_registration_path} My Account
+            %a{href: user_path(current_user.id)} My Account

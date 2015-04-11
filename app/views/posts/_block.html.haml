@@ -1,0 +1,11 @@
+.panel.panel-default
+  .panel-body
+    .page-header
+      %h1
+        =post.title
+        %small=post.created_at.strftime("%d %B %Y")
+    =post.content
+    %blockquote.blockquote-reverse
+      %footer
+        =post.user.username
+
