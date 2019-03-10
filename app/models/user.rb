@@ -7,4 +7,8 @@ class User < ActiveRecord::Base
   has_many :posts
 
   validates_uniqueness_of :username
+
+  def something
+    return 'Yep'
+  end
 end
